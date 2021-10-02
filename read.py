@@ -31,3 +31,7 @@ for d in data:
 		good.append(d)	
 print('一共有', len(good), '筆留言提到good')
 print(good[0])
+
+# 另一種篩選快寫法
+good = [d for d in data if 'good' in d]
+print('一共有', len(good), '筆留言提到good')
